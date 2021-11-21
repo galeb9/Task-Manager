@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/notes.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- note manager -->
+        <section id="note-manager">
+            <div id="note-settings">
+                Notes <i id="add-note-btn" class="fas fa-plus-square"></i>
+            </div>
+                <div id="note-container"></div>
+        </section>
+
+        <!-- task manager -->
+        <section id="task-manager-container">
+            <div id="task-manager">
+                <div id="add-task-container" class="input-item">
+                    <label><b>Tasks:</b></label>
+                    <input id="input-task" class="addTaskStyles" type="text">
+                    <button id="add-task-btn" class="addTaskStyles">Add task</button>
+                </div>
+                <div class="input-item">
+                    <div id="tasks-container"></div>
+                </div>
+            </div>
+        </section>
+      </main>
+    
+    <script src="./scripts/taskManager.js"></script>
+    <script src="./scripts/notesManager.js"></script>
+</body>
+</html>
